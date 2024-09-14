@@ -97,6 +97,18 @@ Server --> plain server without anything installed
 - here we can call modules to perform tasks. every ansible module we can check in the documentation
 - module name is manditory, you can supply arguments to the module , they may be optional or manditory
 
+#### Inventory
+
+intentory.ini -> list of servers where ansible is connecting and perform configurations
+
+- example
+
+        [backend] ---> group
+        172.31.65.237
+        172.31.65.236
+        172.31.65.235
+        172.31.65.234
+
 ##### Ansible
 
 - varaibles
