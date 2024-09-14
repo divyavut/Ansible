@@ -4,16 +4,18 @@
     TRAINER: "siva kumar"
     COURSE: "AwsDevOps from play"
     DURATION: "120HRS"
-  vars_prompt:
-  - name: COURSE
-    prompt: Please enter the course name
-    private: false
-  - name: TRAINER 
-    prompt: Please enter the trainer name 
-    private: false
-  - name: DURATION
-    prompt: please enter the duration of course
-    private: false
+    
+  # vars_prompt:
+  # - name: COURSE
+  #   prompt: Please enter the course name
+  #   private: false
+  # - name: TRAINER 
+  #   prompt: Please enter the trainer name 
+  #   private: false
+  # - name: DURATION
+  #   prompt: please enter the duration of course
+  #   private: false
+
   # vars_files:
   # - vars.yaml
   tasks: 
