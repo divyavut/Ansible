@@ -184,7 +184,7 @@ intentory.ini -> list of servers where ansible is connecting and perform configu
 #### conditions
 
 - when: condition_expression
-  to decide whether the module should run or not
+  to decide whether the task/module should run or not
 
 #### ansible.builtin.command
 
