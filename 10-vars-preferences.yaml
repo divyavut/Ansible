@@ -18,7 +18,7 @@
   - vars.yaml
   tasks: 
   - name: print the course information 
-    vars:
-      COURSE: "AwsDevOps from task"
+    # vars:
+    #   COURSE: "AwsDevOps from task"
     ansible.builtin.debug: 
        msg: "Hi, I am learning {{ COURSE }}, Duration is : {{ DURATION }}, Trainer is: {{ TRAINER }}"
