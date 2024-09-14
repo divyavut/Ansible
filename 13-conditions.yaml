@@ -7,5 +7,5 @@
       register: USER # user is a variable thats stores the above command output 
     - name: print the information of user 
       ansible.builtin.debug: 
-        msg: {{ USER }}
+        msg: "{{ USER }}"
 
