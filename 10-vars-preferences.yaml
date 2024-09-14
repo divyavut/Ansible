@@ -1,10 +1,10 @@
 - name: variables from preferences
   hosts: web 
-  vars: 
-    TRAINER: "siva kumar"
-    COURSE: "AwsDevOps from play"
-    DURATION: "120HRS"
-    
+  # vars: 
+  #   TRAINER: "siva kumar"
+  #   COURSE: "AwsDevOps from play"
+  #   DURATION: "120HRS"
+
   # vars_prompt:
   # - name: COURSE
   #   prompt: Please enter the course name
