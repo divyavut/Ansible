@@ -5,7 +5,7 @@
     COURSE: "AwsDevOps from play"
     DURATION: "120HRS"
   vars_prompt:
-  - name: Course
+  - name: COURSE
     prompt: Please enter the course name
     private: false
   - name: TRAINER 
