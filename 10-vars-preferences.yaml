@@ -7,13 +7,13 @@
   vars_prompt:
   - name: Course
     prompt: Please enter the course name
-    private: true
+    private: false
   - name: TRAINER 
     prompt: Please enter the trainer name 
-    private: true
+    private: false
   - name: DURATION
     prompt: please enter the duration of course
-    private: true
+    private: false
   vars_files:
   - vars.yaml
   tasks: 
