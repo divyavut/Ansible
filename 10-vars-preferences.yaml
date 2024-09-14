@@ -1,4 +1,4 @@
-- name: variables from inventory file
+- name: variables from preferences
   hosts: web 
   vars: 
     TRAINER: "siva kumar"
