@@ -1,0 +1,30 @@
+<students>
+    <student1>
+        <Name>Divya</Name>
+        <Email>divya@gmail.com</Email>
+        <Addresses>
+            <PremAddress>
+                <AddressLine1>Tuggali</AddressLine1>
+                <AddressLine2>518390</AddressLine2>
+            </PremAddress>
+            <CurrentAddress>
+                <AddressLine1>pathi</AddressLine1>
+                <AddressLine2>518380</AddressLine2>
+            </CurrentAddress>
+        </Addresses>
+    </student1>
+    <student2>
+        <Name>vutakanti</Name>
+        <Email>vutakanti@gmail.com</Email>
+        <Addresses>
+            <PremAddress>
+                <AddressLine1>Tuggali</AddressLine1>
+                <AddressLine2>518390</AddressLine2>
+            </PremAddress>
+            <CurrentAddress>
+                <AddressLine1>pathi</AddressLine1>
+                <AddressLine2>518380</AddressLine2>
+            </CurrentAddress>
+        </Addresses>
+    </student2>
+</students>

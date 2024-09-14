@@ -1,0 +1,40 @@
+"students": 
+[
+    {
+        "Name": "Divya",
+        "Email": "divya@gmail.com",
+        "Addresses":
+        [
+            {
+                "type": "Perm",
+                "addressline1": "tuggali",
+                "addressline2": "518390"
+            },
+            {
+                "type": "current",
+                "addressline1": "pathi",
+                "addressline2": "518380"
+            }
+        ]
+    },
+    {
+        "Name": "Vutakanti",
+        "Email": "vutakanti@gmail.com",
+        "Addresses":
+        [
+            {
+                "type": "Perm",
+                "addressline1": "tuggali",
+                "addressline2": "518390"
+            },
+            {
+                "type": "current",
+                "addressline1": "pathi",
+                "addressline2": "518380"
+            }
+        ]
+    }
+
+
+
+]
