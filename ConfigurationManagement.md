@@ -123,7 +123,7 @@ intentory.ini -> list of servers where ansible is connecting and perform configu
 - Task level varaibles
 - command line variaables
 - vars_file variables
-- Promt variables (read input from user)
+- vars_prompt variables (read input from user)
 - inventory variables
 - roles
 
