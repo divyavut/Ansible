@@ -208,6 +208,9 @@ intentory.ini -> list of servers where ansible is connecting and perform configu
 
 Ansible, before connecting to the servers/host it will collect entire information form ansible nodes. so that it can take decisions based on that information
 
+- redhat : ansible.builtin.dnf
+- ubuntu: ansible.builtin.apt
+
 #### loops
 
 - item --> resered keyword
