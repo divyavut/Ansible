@@ -146,8 +146,32 @@ intentory.ini -> list of servers where ansible is connecting and perform configu
 #### ansible Inventory groups
 
 - ungrouped servers
+  - 172.30.2.1
+  - 171.30.2.4
+  - 172.90.5.6
+  - command: ansible -i inventory.ini ungrouped --list-hosts
 - grouped servers
+
+  - [web]
+  - 172.30.2.1
+  - 171.30.2.4
+  - 172.90.5.6
+  - command: ansible -i inventory.ini web --list-hosts
+  - [backend]
+  - 172.30.2.1
+  - 171.30.2.4
+  - 172.90.5.6
+  - command: ansible -i inventory.ini backend --list-hosts
+
 - groupofgroups
+
+  - [servers:children]
+  - web
+  - backend
+  - command: ansible -i inventory.ini server --list-hosts
+
+- all
+  command: ansible -i inventory.ini --list-hosts
 
 #### datatype
 

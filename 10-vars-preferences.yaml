@@ -23,4 +23,13 @@
     # vars:
     #   COURSE: "AwsDevOps from task"
     ansible.builtin.debug: 
-       msg: "Hi, I am learning {{ COURSE }}, Duration is : {{ DURATION }}, Trainer is: {{ TRAINER }}"
+       msg: "Hi, I am learning {{ COURSE }}, Duration is : {{ DURATION }}, Trainer is: {{ TRAINER }}" 
+
+
+  #1. commandline/args.
+  #2. task level 
+  #3. vars_files
+  #4. vars_prompt 
+  #5. play level
+  #6. inventory 
+  #7. roles
