@@ -14,8 +14,8 @@
   - name: DURATION
     prompt: please enter the duration of course
     private: false
-  vars_files:
-  - vars.yaml
+  # vars_files:
+  # - vars.yaml
   tasks: 
   - name: print the course information 
     # vars:
