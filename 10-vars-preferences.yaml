@@ -1,0 +1,21 @@
+- name: variables from inventory file
+  hosts: web 
+  vars: 
+    Name: "siva kumar"
+    Course: "AwsDevOps from play"
+    Duration: "120HRS"
+  vars_prompt:
+  - name: Course
+    prompt: Please enter the course name
+  - name: TRAINER 
+    prompt: Please enter the trainer name 
+  - name: DURATION
+    prompt: please enter the duration of course
+  vars_files:
+  - vars.yaml
+  tasks: 
+  - name: print the course information 
+    vars:
+      Course: "AwsDevOps from task"
+    ansible.builtin.debug: 
+       msg: "Hi, I am learning {{ COURSE }}, Duration is : {{ DURATION }}, Trainer is: {{ TRAINER }}"

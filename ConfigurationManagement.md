@@ -121,9 +121,16 @@ intentory.ini -> list of servers where ansible is connecting and perform configu
 
 - Playlevel varaibles
 - Task level varaibles
-- command line variaables
+- command line variables
+  1.  ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 -e COURSE=AWSDevops -e DURATION=120hrs -e TRAINER=Siva-Kumar 09-vars-from-args.yaml
 - vars_file variables
+  1.  vars_files:
+  - vars.yaml
 - vars_prompt variables (read input from user)
+  1.  vars_prompt:
+  - name: COURSE
+    prompt: please enter the course
+    private: false
 - inventory variables
 - roles
 
