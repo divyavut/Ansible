@@ -1,0 +1,11 @@
+- name: create user 
+  hosts: web 
+  become: yes  
+  tasks: 
+    - name:  check user exist or not 
+      ansible.builtin.command: id expense 
+      register: USER # user is a variable thats stores the above command output 
+    - name: print the information of user 
+      ansible.builtin.debug: 
+        msg: {{ USER }}
+
