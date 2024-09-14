@@ -1,9 +1,9 @@
 - name: variables from inventory file
   hosts: web 
   vars: 
-    Name: "siva kumar"
-    Course: "AwsDevOps from play"
-    Duration: "120HRS"
+    TRAINER: "siva kumar"
+    COURSE: "AwsDevOps from play"
+    DURATION: "120HRS"
   vars_prompt:
   - name: Course
     prompt: Please enter the course name
