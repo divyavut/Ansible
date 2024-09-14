@@ -185,6 +185,7 @@ intentory.ini -> list of servers where ansible is connecting and perform configu
 
 - when: condition_expression
   to decide whether the task/module should run or not
+- whatever inputs that comes from user(prompt) that variabls are considered as strings. so use filters to convert to any specfic datatypes.
 
 #### ansible.builtin.command
 
