@@ -213,7 +213,7 @@ Ansible, before connecting to the servers/host it will collect entire informatio
 
 #### loops
 
-- item --> resered keyword
+- item --> reserved keyword
 
 #### functions == filter
 
@@ -248,6 +248,6 @@ Ansible is main for configureing the servrs but it also connect to any system
 1. environment variables ---> export ANSIBLE_CONFIG=path of config, export used to set the variable, unset ANSIBLE_CONFIG --> to unset the environment variable
 2. current working directory
 3. Home directory
-4. /etc/ansible/ansible.cfg
+4. /etc/ansible/ansible.cfg 
 
 #### jinja2 ---> templating language
