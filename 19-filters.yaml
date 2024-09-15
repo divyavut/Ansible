@@ -4,4 +4,22 @@
   tasks: 
   - name: print the default variable 
     ansible.builtin.debug: 
-      msg: "hello {{ course | default('Ansible')}}"
+      msg: "hello {{ course | default('Ansible')}}" 
+  - name: convert to upper case 
+    vars: 
+      greeting: "Hello Ramesh"
+    ansible.builtin.debug: 
+      msg: " {{ greeting | upper }} "
+
+  - name: convert to lower case 
+    vars: 
+      greeting: "Hello Ramesh"
+    ansible.builtin.debug: 
+      msg: " {{ greeting | lower }} " 
+
+  - name: get unique number 
+    vars: 
+      number: [1,2,3,4,5,6,7,5,4,3,2,1,6]
+    ansible.builtin.debug: 
+      msg: " {{ number | unique}} "
+    
