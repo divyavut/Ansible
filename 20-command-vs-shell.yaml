@@ -3,5 +3,5 @@
   connection: local 
   tasks: 
   - name: print the command usage and shell usage 
-    ansible.builtin.command: echo "hello" > /tmp/test.txt
+    ansible.builtin.command: ls -ltr > /tmp/output.txt
     
