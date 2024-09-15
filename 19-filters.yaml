@@ -42,5 +42,5 @@
         duration: "120"
         trainer: "siva kumar" 
     ansible.builtin.debug: 
-      msg: {{ course | dict2items}} 
+      msg: "{{ course | dict2items}}"
   
