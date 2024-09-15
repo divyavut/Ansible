@@ -5,9 +5,17 @@
   - name: print the shell module usage 
     ansible.builtin.shell: ls -ltr > /tmp/output.txt # login to the server and execute the command 
 
-  - name: print the command module usage 
+  - name: print the shell module usage 
     ansible.builtin.shell: ps -ef | grep ssh 
     register: output 
+  - name: print the command module usage 
+    ansible.builtin.shell: echo "Hello I am command module" > /tmp/command.txt
+    register: test 
+  - name: print the command module output 
+    ansible.builtin.debug: 
+      msg: " {{ test }} "
+
+  
   
 
     
