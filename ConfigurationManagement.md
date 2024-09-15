@@ -228,13 +228,13 @@ Ansible, before connecting to the servers/host it will collect entire informatio
 
 3 servers, 3 records
 mysql.dev.divyavutakanti.com --->
-backend.dev.divyavutakanti.com --->
+backend.dev.divyavutakanti.com ---> 
 frontend.dev.divyavutakanti.com ---->
 divya.vut
 
 #### Ansible
 
-Ansible is main for configureing the servrs but it also connect to any system
+Ansible is main for configuring the servrs but it can also connect to any system if module is available
 
 #### Ansible Roles
 
