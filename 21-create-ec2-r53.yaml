@@ -26,7 +26,7 @@
     ansible.builtin.debug: 
       msg: "{{ ec2_instances_info }}" 
 
-  - name: create route 53
+  - name: create route 53 private records
     amazon.aws.route53: 
       state: present
       zone: "{{ zone }}"
@@ -38,7 +38,7 @@
       overwrite: true
     loop: "{{ ec2_instances_info.results }}"
   
-  - name: create route 53
+  - name: create r53 for public records
     amazon.aws.route53: 
     state: present
     zone: "{{ zone }}"
