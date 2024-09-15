@@ -22,4 +22,25 @@
       number: [1,2,3,4,5,6,7,5,4,3,2,1,6]
     ansible.builtin.debug: 
       msg: " {{ number | unique}} "
-    
+
+  - name: get the min number 
+    vars: 
+      number: [10,9,20,3,1,2,4]
+    ansible.builtin.debug:  
+      msg: "{{ number | min }}"
+
+  - name: get max the number 
+    vars: 
+      number: [10,9,20,3,1,2,4] 
+    ansible.builtin.debug:  
+      msg: "{{ number | max }}"
+
+  - name: convert map to list 
+    vars: 
+      course: 
+        name: "DevopsWithAWS" 
+        duration: "120"
+        trainer: "siva kumar" 
+    ansible.builtin.debug: 
+      msg: {{ course | dict2items}} 
+  
