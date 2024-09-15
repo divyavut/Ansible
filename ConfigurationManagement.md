@@ -228,13 +228,15 @@ Ansible, before connecting to the servers/host it will collect entire informatio
 
 3 servers, 3 records
 mysql.dev.divyavutakanti.com --->
-backend.dev.divyavutakanti.com ---> 
+backend.dev.divyavutakanti.com --->
 frontend.dev.divyavutakanti.com ---->
-divya.vut
 
 #### Ansible
 
-Ansible is main for configuring the servrs but it can also connect to any system if module is available
+Ansible is main for configuring the servers but it can also connect to any system if module is available
+
+- ansible connects to aws using accesskeys and secret access key and as ansible is developed by python, ansible needs python libraries(sdk)to connect to aws. those libraries are boto3, botocore.
+- By default, aws cli is installed in every ec2 instance.
 
 #### Ansible Roles
 
@@ -248,6 +250,6 @@ Ansible is main for configuring the servrs but it can also connect to any system
 1. environment variables ---> export ANSIBLE_CONFIG=path of config, export used to set the variable, unset ANSIBLE_CONFIG --> to unset the environment variable
 2. current working directory
 3. Home directory
-4. /etc/ansible/ansible.cfg 
+4. /etc/ansible/ansible.cfg
 
 #### jinja2 ---> templating language
