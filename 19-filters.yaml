@@ -47,8 +47,8 @@
   - name: covert list to map 
     vars: 
       course:
-        - { "key": "name", "value": "DevopsWithAWS"}
-        - { "key": "duration", "vaule": 120}
-        - { "key": "trainer", "vaule": "siva kumar"}
+        - { "key": "name","value": "DevopsWithAWS"}
+        - { "key": "duration","vaule": 120}
+        - { "key": "trainer","vaule": "siva kumar"}
     ansible.builtin.debug: 
       msg: "{{ course | items2dict }}"
