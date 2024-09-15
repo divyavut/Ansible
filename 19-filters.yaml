@@ -54,6 +54,6 @@
       msg: "{{ course | items2dict }}" 
   - name: check ip adress 
     vars:
-      myip: "44.220.51.250"
+      myip: "336.220.51.250"
     ansible.builtin.debug: 
       msg: "{{ myip | ansible.utils.ipv4 }}"
