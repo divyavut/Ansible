@@ -6,6 +6,8 @@
     ansible.builtin.shell: ls -ltr > /tmp/output.txt # login to the server and execute the command 
 
   - name: print the command module usage 
-    ansible.builtin.command: ps -ef | grep ssh 
+    ansible.builtin.shell: ps -ef | grep ssh 
     register: output 
+  
+
     
