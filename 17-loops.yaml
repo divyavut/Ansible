@@ -1,0 +1,12 @@
+- name: loop demo 
+  hosts: local 
+  connection: local 
+  tasks: 
+  - name: install the packages using loop 
+    ansible.builtin.package:
+      name: {{ item }}
+      state: present 
+    loop:
+    - mysql 
+    - nginx
+    - httpd
